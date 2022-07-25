@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <style>
+  body
+  {
+   background-color: black;
+   color: white;
+   font-family: Arial;
+  }
+  .dark-mode {
+        background-color: black;
+        color: white;
+      }
+  .light-mode {
+        background-color: white;
+        color: black;
+      }
+   h1
+   {
+     font-size: 1.8em;
+   }
+  .lua
+  {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 3em;
+    width: 90%;
+  }
+ 
+  .lua > img
+  {
+    padding: 3em;
+    width: 500px;
+  }
+  .marte > img
+  {
+    width: 500px;
+  }
+  .marte 
+  {
+     display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 3em;
+    align-content: center;
+   width: 100%;
+  }
+  </style>
+  <body>
+     <main>
+       <h3 id="DarkModetext">Dark Mode is ON</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
+       <section class="lua">
+       <img src="Moon.jpg" alt="foto de um residencial na lua do planeta Terra">
+       <article> 
+       <h1> Moon</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin libero nunc consequat interdum. Id semper risus in hendrerit gravida rutrum quisque. Orci ac auctor augue mauris augue neque. Feugiat nibh sed pulvinar proin gravida. Pharetra convallis posuere morbi leo urna molestie at elementum eu. Posuere sollicitudin aliquam ultrices sagittis orci. Nec ullamcorper sit amet risus nullam eget felis eget nunc. Auctor eu augue ut lectus arcu bibendum at varius. Massa enim nec dui nunc.  </p>
+       </section>
+       <section class="marte">
+       <img src="Extremely detailed and realistic high resolution 3d illustration of a colony on mars like planet_ Elements of this image are furnished by Nasa_.jpg" alt="colônia em marte">
+      <article> 
+        <h1> Marte</h1>
+        <p>Donec massa sapien faucibus et. Feugiat pretium nibh ipsum consequat nisl vel pretium. Purus gravida quis blandit turpis cursus. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Purus in mollis nunc sed id semper risus in. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Scelerisque felis imperdiet proin fermentum leo vel orci porta. </p>              
+       </section>
+     
+     </main>
+  </body>
+</html>
